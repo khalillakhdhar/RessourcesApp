@@ -10,5 +10,6 @@ public List<Team> getAllTeams();
 public Team addOneTeam(Team team);
 public Optional<Team> getOneTeam(long id);
 public void deleteOne(long id);
+public Team setLeader(long idTeam,long idLeader);
 
 }

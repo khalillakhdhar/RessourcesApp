@@ -8,7 +8,9 @@ import com.livraison.entities.Training;
 
 public interface TrainingInterface {
 	public List<Training> getAllTrainings();
-	public Team addOneTraining(Training training);
-	public Optional<Team> getOneTraining(long id);
+	public Training addOneTraining(Training training);
+	public Optional<Training> getOneTraining(long id);
 	public void deleteOne(long id);
+	public Training addEmployeeToTraining(long idTraining, long idEmployee);
+	public Training addTaskToTraining(long idTraining, long idTask);
 }
